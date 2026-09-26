@@ -27,7 +27,7 @@ a {
 }
 
 section {
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -52,15 +52,15 @@ section {
   justify-content: space-between;
 
   .certificate-item {
-    max-width: 295px;
+    max-width: 360px;
   }
   .certificate-item:hover .certificate-desc {
-    color: #50946e;
+    color: #62c262;
   }
 
   .certificate-item img {
     width: 100%;
-    max-width: 295px;
+    max-width: 360px;
     height: auto;
     display: block;
   }
@@ -103,7 +103,54 @@ section {
   }
 }
 
+.aaa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-container {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 390px;
+
+  img {
+    width: 100%;
+  }
+  .portfolio-date {
+    color: #d3d1cb;
+    margin-top: 20px;
+  }
+
+  .portfolio-row {
+    display: flex;
+    gap: 25px;
+    margin: 10px 15px;
+  }
+}
+
 .mark {
   color: #387dc9;
+  font-weight: bold;
+}
+
+.hl-date {
+  padding: 2px 5px;
+  border-radius: 2px;
+  width: fit-content;
+
+  &.green {
+    background-color: #cce8cc;
+    color: #62c262;
+  }
+  &.lilac {
+    background-color: #dbacde;
+    color: #9c3cad;
+  }
+}
+.hl-text {
+  color: #62c262;
   font-weight: bold;
 }
