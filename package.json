@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "push-dir": "^0.4.1"
   }
 }
