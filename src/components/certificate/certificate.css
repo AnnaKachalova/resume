@@ -1,0 +1,28 @@
+.certificate-item {
+  max-width: 360px;
+}
+.certificate-item:hover .certificate-desc {
+  color: #62c262;
+}
+
+.certificate-item img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+}
+
+.certificate-desc {
+  color: #333;
+  font-size: 16px;
+  margin: 15px 0 5px 0;
+  display: block;
+  text-decoration: none;
+}
+
+.certificate-date {
+  font-size: 14px;
+  color: #ccc;
+  margin: 0;
+  text-decoration: none;
+}
