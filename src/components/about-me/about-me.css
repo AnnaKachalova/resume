@@ -1,0 +1,22 @@
+h1 {
+  text-align: left;
+  font-size: 32px;
+}
+
+.about-me-container {
+  display: flex;
+  gap: 50px;
+  height: 300px;
+  margin: 30px 0;
+
+  .about-me-photo {
+    background-color: #d3d1cb;
+    flex: 0 0 34%;
+  }
+  .about-me-description {
+    font-size: 16px;
+    text-align: left;
+    white-space: break-spaces;
+    line-height: 1.5;
+  }
+}
