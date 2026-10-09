@@ -1,0 +1,33 @@
+.experience-item {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 30px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  align-items: baseline;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-period {
+  color: #777676;
+}
+
+.mark {
+  color: #387dc9;
+  font-weight: bold;
+}
+
+.experience-responsibilities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  .experience-responsibility {
+    text-align: left;
+    list-style-position: inside;
+    line-height: 24px;
+  }
+}

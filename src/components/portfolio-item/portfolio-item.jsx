@@ -1,5 +1,4 @@
 import "../portfolio-item/portfolio-item.css";
-import a from "../../assets/gif/1.gif";
 
 export default function PortfolioItem({ img, description, date, technologies }) {
   return (

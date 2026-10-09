@@ -3,6 +3,9 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
 }
 
 .portfolio-img {
@@ -31,10 +34,5 @@
 }
 
 .part2 {
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   padding: 10px;
 }
