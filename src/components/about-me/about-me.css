@@ -20,3 +20,28 @@ h1 {
     line-height: 1.5;
   }
 }
+
+.about-me-contacts {
+  display: flex;
+  margin-top: 30px;
+
+  .left,
+  .right {
+    flex-grow: 1;
+  }
+
+  .left {
+    display: flex;
+    gap: 10px;
+  }
+
+  .html-academy,
+  .github {
+    width: 30px;
+    height: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
