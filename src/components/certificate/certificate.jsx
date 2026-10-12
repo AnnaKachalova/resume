@@ -17,31 +17,31 @@ const certificatesData = [
   {
     description: "React. Разработка сложных клиентских приложений.",
     img: react,
-    date: "27 сентября — 28 ноября 2021",
+    date: "27 сентября - 28 ноября 2021",
     pdf: reactPdf,
   },
   {
     description: "JavaScript. Архитектура клиентских приложений",
     img: jsar,
-    date: "29 марта — 30 мая 2021",
+    date: "29 марта - 30 мая 2021",
     pdf: jsarPdf,
   },
   {
     description: "Профессиональный JavaScript, уровень 1.",
     img: js1,
-    date: "31 мая — 5 августа 2019",
+    date: "31 мая - 5 августа 2019",
     pdf: js1Pdf,
   },
   {
     description: "Профессиональный HTML и CSS, уровень 1.",
     img: html,
-    date: "2 сентября — 3 ноября 2019",
+    date: "2 сентября - 3 ноября 2019",
     pdf: htmlPdf,
   },
   {
     description: "Профессиональный JavaScript, уровень 2.",
     img: js2,
-    date: "18 ноября 2019 — 29 января 2020",
+    date: "18 ноября 2019 - 29 января 2020",
     pdf: js2Pdf,
   },
 ];

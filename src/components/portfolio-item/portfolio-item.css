@@ -1,38 +1,94 @@
+:root {
+  /* Голубые плашки (TypeScript, JavaScript) */
+  --badge-blue-bg: #dcecf5;
+  --badge-blue-text: #1a3e59;
+
+  /* Фиолетовые/Лавандовые плашки (SVG, WCAG, Lottie) */
+  --badge-purple-bg: #e3dff2;
+  --badge-purple-text: #3b2d60;
+
+  /* Мятная плашка (HTML CSS) */
+  --badge-mint-bg: #d8efe5;
+  --badge-mint-text: #14533a;
+
+  /* Салатовая плашка */
+  --badge-green-bg: #e2f0d9;
+  --badge-green-text: #2e531a;
+
+  --gray-text: #7f7f7f;
+}
+
 .portfolio-item {
   width: 360px;
   text-align: left;
   display: flex;
   flex-direction: column;
 
-  border: 1px solid #d3d3d3;
-  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 12px;
+  border-radius: 12px;
 }
 
 .portfolio-img {
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 
-.portfolio-date {
-  color: #d3d1cb;
-  margin-top: 20px;
+.portfolio-content {
+  margin: 10px 10px;
+}
+.portfolio-title {
+  color: #1b4468;
+  font-weight: bold;
 }
 
 .portfolio-description {
   min-height: 50px;
 }
+.portfolio-comment {
+  color: #676666;
+  font-size: 12px;
+}
+
+.portfolio-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 15px 10px;
+  align-items: center;
+
+  .portfolio-date {
+    font-size: 16px;
+    color: var(--gray-text);
+  }
+}
+
 .portfolio-technologies {
-  color: #62c262;
-}
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
 
-.green {
-  background-color: #cce8cc;
-  color: #62c262;
-  width: max-content;
-  padding: 2px 5px;
-}
+  .badge {
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
 
-.part2 {
-  padding: 10px;
+  .badge.css,
+  .badge.html {
+    background-color: var(--badge-green-bg);
+    color: var(--badge-green-text);
+  }
+  .badge.svg,
+  .badge.wcag,
+  .badge.lottie {
+    background-color: var(--badge-purple-bg);
+    color: var(--badge-purple-text);
+  }
+
+  .badge.typescript,
+  .badge.javascript {
+    background-color: var(--badge-blue-bg);
+    color: var(--badge-blue-text);
+  }
 }
