@@ -1,0 +1,27 @@
+:root {
+  --gray-text: #7f7f7f;
+  --blue-text: #387dc9;
+  --dark-blue-text: #333;
+
+  --badge-blue-bg: #cfe1fd;
+  --badge-blue-text: #123263;
+
+  --box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 12px;
+  --box-radius: 12px;
+
+  /* Голубые плашки (TypeScript, JavaScript) */
+  --badge-blue-bg: #cfe1fd;
+  --badge-blue-text: #123263;
+
+  /* Фиолетовые плашки (SVG, WCAG, Lottie) */
+  --badge-purple-bg: #e3dff2;
+  --badge-purple-text: #3b2d60;
+
+  /* Мятная плашка (HTML CSS) */
+  --badge-mint-bg: #d8efe5;
+  --badge-mint-text: #14533a;
+
+  /* Салатовая плашка */
+  --badge-green-bg: #d3f1a7;
+  --badge-green-text: #37471f;
+}

@@ -1,3 +1,5 @@
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "./certificate-item.css";
 
 export default function CertificateItem({ description, img, date, pdf }) {

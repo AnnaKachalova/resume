@@ -1,3 +1,5 @@
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import PortfolioItem from "../portfolio-item/portfolio-item";
 
 import p1 from "../../assets/portfolio/1.png";

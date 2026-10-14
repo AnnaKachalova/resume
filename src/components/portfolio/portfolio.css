@@ -4,11 +4,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-header {
-  margin-bottom: 20px;
-  text-align: left;
-  margin-top: 30px;
-}
+
 .portfolio-subHeader {
   margin-bottom: 30px;
   text-align: left;

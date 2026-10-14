@@ -1,9 +1,3 @@
-:root {
-  --gray-text: #7f7f7f;
-  --blue-text: #387dc9;
-  --dark-blue-text: #333;
-}
-
 .certificate-item {
   max-width: 360px;
 }

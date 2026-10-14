@@ -1,21 +1,35 @@
-:root {
-  --gray-text: #7f7f7f;
-  --blue-text: #387dc9;
-  --dark-blue-text: #333;
-}
-
 .education-container {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 12px;
-  border-radius: 10px;
-  padding: 30px 20px;
-  font-size: 16px;
+  padding: 24px;
   margin-bottom: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--box-radius);
+  font-size: 16px;
+  min-width: 0;
 }
 
-.education-name {
+.education-university {
   margin-bottom: 30px;
-  text-align: left;
   color: var(--dark-blue-text);
+  overflow-wrap: anywhere;
+}
+
+.education-details {
+  display: flex;
+  gap: 14px;
+  margin: 0;
+  flex-direction: column;
+  text-align: left;
+
+  dt {
+    min-width: 120px;
+  }
+}
+
+.education-row {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  align-items: center;
 }
 
 .education-date {
@@ -25,13 +39,10 @@
   text-align: left;
 }
 
-.education-row {
-  display: flex;
-  gap: 25px;
-  margin: 8px 0;
-}
-
-.mark {
-  color: var(--blue-text);
-  font-weight: bold;
+.education-qualification {
+  background-color: var(--badge-blue-bg);
+  color: var(--badge-blue-text);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 16px;
 }

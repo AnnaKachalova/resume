@@ -4,6 +4,8 @@ import Education from "../education/education";
 import Portfolio from "../portfolio/portfolio";
 import Experience from "../experience/experience";
 
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "../main/main.css";
 
 export default function Main() {

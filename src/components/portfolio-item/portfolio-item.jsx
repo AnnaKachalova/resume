@@ -1,3 +1,5 @@
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "../portfolio-item/portfolio-item.css";
 
 export default function PortfolioItem({ img, title, description, comment, date, technologies }) {

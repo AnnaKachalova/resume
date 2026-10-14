@@ -1,5 +1,7 @@
 import ExperienceItem from "../experience-item/experience-item";
 
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "../experience/experience.css";
 
 const experienceData = [

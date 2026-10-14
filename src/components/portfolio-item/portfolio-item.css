@@ -1,31 +1,11 @@
-:root {
-  /* Голубые плашки (TypeScript, JavaScript) */
-  --badge-blue-bg: #dcecf5;
-  --badge-blue-text: #1a3e59;
-
-  /* Фиолетовые/Лавандовые плашки (SVG, WCAG, Lottie) */
-  --badge-purple-bg: #e3dff2;
-  --badge-purple-text: #3b2d60;
-
-  /* Мятная плашка (HTML CSS) */
-  --badge-mint-bg: #d8efe5;
-  --badge-mint-text: #14533a;
-
-  /* Салатовая плашка */
-  --badge-green-bg: #e2f0d9;
-  --badge-green-text: #2e531a;
-
-  --gray-text: #7f7f7f;
-}
-
 .portfolio-item {
   width: 360px;
   text-align: left;
   display: flex;
   flex-direction: column;
 
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 12px;
-  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--box-radius);
 }
 
 .portfolio-img {
@@ -45,6 +25,7 @@
 .portfolio-description {
   min-height: 50px;
 }
+
 .portfolio-comment {
   color: #676666;
   font-size: 12px;

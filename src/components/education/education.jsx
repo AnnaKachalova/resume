@@ -1,4 +1,7 @@
 import EducationItem from "../education-item/education-item";
+
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "../education/education.css";
 
 const educationData = [

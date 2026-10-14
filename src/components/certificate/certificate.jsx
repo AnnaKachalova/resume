@@ -1,3 +1,5 @@
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "./certificate.css";
 import CertificateItem from "../certificate-item/certificate-item";
 

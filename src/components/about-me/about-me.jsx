@@ -1,4 +1,7 @@
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "../about-me/about-me.css";
+
 import github from "../../assets/images/github.png";
 import htmlacademy from "../../assets/images/html.png";
 

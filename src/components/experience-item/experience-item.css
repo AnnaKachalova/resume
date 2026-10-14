@@ -1,15 +1,9 @@
-:root {
-  --gray-text: #7f7f7f;
-  --blue-text: #387dc9;
-  --dark-blue-text: #333;
-}
-
 .experience-position {
   color: var(--dark-blue-text);
 }
 
 .experience-item {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 12px;
+  box-shadow: var(--box-shadow);
   border-radius: 10px;
   padding: 30px 20px;
   font-size: 16px;

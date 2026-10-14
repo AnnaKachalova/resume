@@ -1,3 +1,5 @@
+import "../../styles/global.css";
+import "../../styles/variables.css";
 import "../experience-item/experience-item.css";
 
 export default function ExperienceItem({ position, company, period, responsibilities, stack }) {
