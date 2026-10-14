@@ -13,8 +13,12 @@ export default function PortfolioItem({ img, title, description, comment, date, 
 
       <div className="portfolio-footer">
         <div className="portfolio-technologies">
-          {technologies.map((technology) => {
-            return <div className={`badge ${technology.toLowerCase()}`}>{technology}</div>;
+          {technologies.map((technology, index) => {
+            return (
+              <div key={index} className={`badge ${technology.toLowerCase()}`}>
+                {technology}
+              </div>
+            );
           })}
         </div>
         <div className="portfolio-date">{date}</div>

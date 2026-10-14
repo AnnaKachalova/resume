@@ -11,8 +11,12 @@ export default function ExperienceItem({ position, company, period, responsibili
 
       <div className="experience-period">{period}</div>
       <ul className="experience-responsibilities">
-        {responsibilities.map((responsibility) => {
-          return <li className="experience-responsibility">{responsibility}</li>;
+        {responsibilities.map((responsibility, index) => {
+          return (
+            <li key={index} className="experience-responsibility">
+              {responsibility}
+            </li>
+          );
         })}
       </ul>
     </div>

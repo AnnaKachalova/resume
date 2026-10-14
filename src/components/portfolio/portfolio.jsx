@@ -119,9 +119,10 @@ export default function Portfolio() {
       <h2 className="portfolio-header">Портфолио</h2>
       <p className="portfolio-subHeader"> более {">"} 400 игровых карт и компоненты к ним</p>
       <div className="portfolio-group">
-        {portfolioData.map((port) => {
+        {portfolioData.map((port, index) => {
           return (
             <PortfolioItem
+              key={index}
               img={port.img}
               title={port.title}
               description={port.description}

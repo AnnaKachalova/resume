@@ -25,9 +25,10 @@ export default function Education() {
   return (
     <section className="education">
       <h2 className="education-header">Образование</h2>
-      {educationData.map((cer) => {
+      {educationData.map((cer, index) => {
         return (
           <EducationItem
+            key={index}
             name={cer.name}
             faculty={cer.faculty}
             speciality={cer.speciality}

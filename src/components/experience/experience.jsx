@@ -60,9 +60,10 @@ export default function Experience() {
     <section className="experience">
       <h2 className="experience-header">Опыт работы </h2>
       <div className="experience-group">
-        {experienceData.map((port) => {
+        {experienceData.map((port, index) => {
           return (
             <ExperienceItem
+              key={index}
               position={port.position}
               company={port.company}
               period={port.period}

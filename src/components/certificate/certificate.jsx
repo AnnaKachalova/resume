@@ -53,8 +53,8 @@ export default function Certificate() {
     <section className="certificates">
       <h2 className="certificate-header">Сертификаты</h2>
       <div className="certificate-container">
-        {certificatesData.map((cer) => {
-          return <CertificateItem description={cer.description} img={cer.img} date={cer.date} pdf={cer.pdf} />;
+        {certificatesData.map((cer, index) => {
+          return <CertificateItem key={index} description={cer.description} img={cer.img} date={cer.date} pdf={cer.pdf} />;
         })}
       </div>
     </section>

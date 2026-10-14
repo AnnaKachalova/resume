@@ -35,8 +35,8 @@ export default function AboutMe() {
           </p>
           <div className="about-me-contacts">
             <div className="about-me-socials">
-              {contacts.map(({ label, href, icon }) => (
-                <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+              {contacts.map(({ label, href, icon }, index) => (
+                <a key={index} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
                   <img src={icon} alt="" />
                 </a>
               ))}
