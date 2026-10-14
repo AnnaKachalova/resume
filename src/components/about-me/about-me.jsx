@@ -5,6 +5,19 @@ import "../about-me/about-me.css";
 import github from "../../assets/images/github.png";
 import htmlacademy from "../../assets/images/html.png";
 
+const contacts = [
+  {
+    label: "GitHub",
+    href: "https://github.com/AnnaKachalova",
+    icon: github,
+  },
+  {
+    label: "HTML Academy",
+    href: "https://htmlacademy.ru/profile/id206162",
+    icon: htmlacademy,
+  },
+];
+
 export default function AboutMe() {
   return (
     <section className="about-me">
@@ -21,21 +34,16 @@ export default function AboutMe() {
             координировала работу команды, распределяла задачи и отвечала за соблюдение сроков релизов.
           </p>
           <div className="about-me-contacts">
-            <div className="left">
-              <div className="html-academy">
-                <a href="https://htmlacademy.ru/profile/id206162" target="_blank" rel="noopener noreferrer">
-                  <img src={htmlacademy} />
+            <div className="about-me-socials">
+              {contacts.map(({ label, href, icon }) => (
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+                  <img src={icon} alt="" />
                 </a>
-              </div>
-              <div className="github">
-                <a href="https://github.com/AnnaKachalova" target="_blank" rel="noopener noreferrer">
-                  <img src={github} />
-                </a>
-              </div>
+              ))}
             </div>
-            <div className="right">
-              <div className="email">kachalova.anna.10@gmail.com</div>
-              <div className="phone-number">89270325442</div>
+            <div className="about-me-contact-info">
+              <a href="mailto:kachalova.anna.10@gmail.com">kachalova.anna.10@gmail.com</a>
+              <a href="tel:+79270325442">8 (927) 032-54-42</a>
             </div>
           </div>
         </div>

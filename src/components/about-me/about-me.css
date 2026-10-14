@@ -19,20 +19,24 @@
 .about-me-contacts {
   display: flex;
   margin-top: 30px;
+}
 
-  .left,
-  .right {
-    flex-grow: 1;
-  }
+.about-me-socials {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
 
-  .left {
-    display: flex;
-    gap: 10px;
-  }
+.about-me-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-wrap: anywhere;
+}
 
-  .html-academy,
-  .github {
-    width: 30px;
-    height: 30px;
-  }
+.about-me-socials img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
