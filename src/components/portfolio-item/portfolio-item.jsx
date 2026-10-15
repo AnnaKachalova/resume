@@ -2,7 +2,7 @@ import "../../styles/global.css";
 import "../../styles/variables.css";
 import "../portfolio-item/portfolio-item.css";
 
-export default function PortfolioItem({ img, title, description, comment, date, technologies }) {
+export default function PortfolioItem({ img, description, comment, date, technologies }) {
   return (
     <div className="portfolio-item">
       <img className="portfolio-img" src={img} alt="" />
