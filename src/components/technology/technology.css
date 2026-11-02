@@ -1,0 +1,28 @@
+.technology-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.technology {
+  height: 20px;
+  min-width: min-content;
+
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--light-gray);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.technology-name {
+  text-wrap: nowrap;
+}
+
+.technology-img {
+  height: 20px;
+}
