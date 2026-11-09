@@ -1,6 +1,5 @@
 import EducationItem from "../education-item/education-item";
 import educationData from "./data-education.json";
-import "../education/education.css";
 import type { JSX } from "react";
 
 export default function Education(): JSX.Element {

@@ -2,8 +2,6 @@ import ExperienceItem from "../experience-item/experience-item";
 import dataExperience from "./data-experience.json";
 import type { JSX } from "react";
 
-import "../experience/experience.css";
-
 export default function Experience(): JSX.Element {
   return (
     <section className="experience">
