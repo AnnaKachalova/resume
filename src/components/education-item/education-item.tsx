@@ -1,8 +1,17 @@
-import "../../styles/global.css";
-import "../../styles/variables.css";
 import "../education-item/education-item.css";
+import type { JSX } from "react";
 
-export default function EducationItem({ name, faculty, speciality, qualification, date }) {
+interface EducationItemProps {
+  name: string;
+  faculty: string;
+  speciality: string;
+  qualification: string;
+  date: string;
+}
+
+export default function EducationItem(prosp: EducationItemProps): JSX.Element {
+  const { name, faculty, speciality, qualification, date } = prosp;
+
   return (
     <article className="education-container">
       <h3 className="education-university">{name}</h3>

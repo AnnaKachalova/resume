@@ -1,8 +1,17 @@
-import "../../styles/global.css";
-import "../../styles/variables.css";
+import type { JSX } from "react";
 import "../experience-item/experience-item.css";
 
-export default function ExperienceItem({ position, company, period, responsibilities, stack }) {
+interface ExperienceItemProps {
+  position: string;
+  company: string;
+  period: string;
+  responsibilities: string[];
+  stack: string;
+}
+
+export default function ExperienceItem(props: ExperienceItemProps): JSX.Element {
+  const { position, company, period, responsibilities, stack } = props;
+
   return (
     <div className="experience-item">
       <h3 className="experience-position">{position}</h3>

@@ -1,11 +1,10 @@
 import ExperienceItem from "../experience-item/experience-item";
 import dataExperience from "./data-experience.json";
+import type { JSX } from "react";
 
-import "../../styles/global.css";
-import "../../styles/variables.css";
 import "../experience/experience.css";
 
-export default function Experience() {
+export default function Experience(): JSX.Element {
   return (
     <section className="experience">
       <h2 className="experience-header">Опыт работы</h2>

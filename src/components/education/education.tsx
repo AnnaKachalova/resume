@@ -1,11 +1,9 @@
 import EducationItem from "../education-item/education-item";
 import educationData from "./data-education.json";
-
-import "../../styles/global.css";
-import "../../styles/variables.css";
 import "../education/education.css";
+import type { JSX } from "react";
 
-export default function Education() {
+export default function Education(): JSX.Element {
   return (
     <section className="education">
       <h2 className="education-header">Образование</h2>

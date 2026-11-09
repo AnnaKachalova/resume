@@ -1,8 +1,17 @@
-import "../../styles/global.css";
-import "../../styles/variables.css";
+import type { JSX } from "react";
 import "../portfolio-item/portfolio-item.css";
 
-export default function PortfolioItem({ img, description, comment, date, technologies }) {
+interface PortfolioItemProps {
+  img: string;
+  description: string;
+  comment?: string;
+  date: number;
+  technologies: string[];
+}
+
+export default function PortfolioItem(props: PortfolioItemProps): JSX.Element {
+  const { img, description, comment, date, technologies } = props;
+
   return (
     <div className="portfolio-item">
       <img className="portfolio-img" src={img} alt="" />

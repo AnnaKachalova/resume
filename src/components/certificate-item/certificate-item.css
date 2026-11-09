@@ -1,18 +1,12 @@
 .certificate-item {
-  max-width: 360px;
+  width: calc((100% - 30px * 2) / 3);
 }
-.certificate-item:hover .certificate-desc {
+
+.certificate-item:hover .certificate-description {
   color: var(--blue-text);
 }
 
-.certificate-item img {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  display: block;
-}
-
-.certificate-desc {
+.certificate-description {
   color: var(--dark-blue-text);
   font-size: 16px;
   margin: 15px 0 5px 0;
@@ -23,6 +17,5 @@
 .certificate-date {
   font-size: 14px;
   color: var(--gray-text);
-  margin: 0;
   text-decoration: none;
 }

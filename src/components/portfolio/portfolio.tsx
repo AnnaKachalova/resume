@@ -1,11 +1,10 @@
-import "../../styles/global.css";
-import "../../styles/variables.css";
+import type { JSX } from "react";
 import "../portfolio/portfolio.css";
 
 import PortfolioItem from "../portfolio-item/portfolio-item";
 import { portfolioData } from "./data-portfolio";
 
-export default function Portfolio() {
+export default function Portfolio(): JSX.Element {
   return (
     <section className="portfolio">
       <h2 className="portfolio-header">Портфолио</h2>
@@ -16,7 +15,6 @@ export default function Portfolio() {
             <PortfolioItem
               key={port.id}
               img={port.img}
-              title={port.title}
               description={port.description}
               comment={port.comment}
               date={port.date}

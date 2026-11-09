@@ -1,9 +1,8 @@
-import "../../styles/global.css";
-import "../../styles/variables.css";
 import "../about-me/about-me.css";
+import type { JSX } from "react";
 
-import github from "../../assets/images/github.png";
-import htmlacademy from "../../assets/images/html.png";
+import github from "../../assets/svg/git.svg";
+import htmlacademy from "../../assets/svg/htmlacademy.svg";
 
 const contacts = [
   {
@@ -18,7 +17,7 @@ const contacts = [
   },
 ];
 
-export default function AboutMe() {
+export default function AboutMe(): JSX.Element {
   return (
     <section className="about-me">
       <h1>Качалова Анна | Frontend developer</h1>
