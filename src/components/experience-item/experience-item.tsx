@@ -6,7 +6,7 @@ interface ExperienceItemProps {
   company: string;
   period: string;
   responsibilities: string[];
-  stack: string;
+  stack: string[];
 }
 
 export default function ExperienceItem(props: ExperienceItemProps): JSX.Element {
@@ -16,7 +16,21 @@ export default function ExperienceItem(props: ExperienceItemProps): JSX.Element 
     <div className="experience-item">
       <h3 className="experience-position">{position}</h3>
       <div className="experience-company mark">{company}</div>
-      {stack ? <div className="stack">{stack}</div> : ""}
+      {stack.length > 0 && (
+        <div className="experience-stack">
+          <span className="experience-stack-label">Стек:</span>
+          <div className="experience-stack-badges">
+            {stack.map((technology) => (
+              <span
+                key={technology}
+                className={`experience-stack-badge ${technology.toLowerCase()}`}
+              >
+                {technology}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="experience-period">{period}</div>
       <ul className="experience-responsibilities">

@@ -25,6 +25,55 @@
   font-weight: bold;
 }
 
+.experience-stack {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-stack-label {
+  color: var(--gray-text);
+}
+
+.experience-stack-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-stack-badge {
+  padding: 4px 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.experience-stack-badge.javascript,
+.experience-stack-badge.typescript {
+  border-color: transparent;
+  background-color: var(--badge-blue-bg);
+  color: var(--badge-blue-text);
+}
+
+.experience-stack-badge.react {
+  border-color: transparent;
+  background-color: var(--badge-react-bg);
+  color: var(--badge-react-text);
+}
+
+.experience-stack-badge.coffeescript {
+  border-color: transparent;
+  background-color: var(--badge-coffeescript-bg);
+  color: var(--badge-coffeescript-text);
+}
+
+.experience-stack-badge.jquery {
+  border-color: transparent;
+  background-color: var(--badge-jquery-bg);
+  color: var(--badge-jquery-text);
+}
+
 .experience-responsibilities {
   display: flex;
   flex-direction: column;

@@ -6,6 +6,15 @@
   --badge-blue-bg: #cfe1fd;
   --badge-blue-text: #123263;
 
+  --badge-react-bg: #e8ddf5;
+  --badge-react-text: #49316b;
+
+  --badge-coffeescript-bg: #f7dfe7;
+  --badge-coffeescript-text: #71344a;
+
+  --badge-jquery-bg: #d9eee3;
+  --badge-jquery-text: #28523a;
+
   --box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 12px;
   --box-radius: 12px;
 
