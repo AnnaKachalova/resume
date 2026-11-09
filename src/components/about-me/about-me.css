@@ -1,7 +1,6 @@
 .about-me-container {
   display: flex;
   gap: 50px;
-  height: 300px;
   margin: 30px 0;
 }
 
@@ -37,4 +36,21 @@
 .about-me-socials img {
   display: block;
   height: 30px;
+}
+
+@media (max-width: 600px) {
+  .about-me-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me-photo {
+    flex-basis: auto;
+    height: 220px;
+  }
+
+  .about-me-contacts {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
