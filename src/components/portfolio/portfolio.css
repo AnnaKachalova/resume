@@ -1,7 +1,7 @@
 .portfolio-group {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 360px));
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -9,3 +9,11 @@
   margin-bottom: 30px;
   text-align: left;
 }
+
+/*
+repeat(auto-fit, ...) — создаёт столько колонок, сколько помещается в строке.
+В minmax(минимум, максимум) задаётся диапазон ширины колонки.
+min(100%, 360px) — минимум равен 360px, но не больше ширины контейнера. Если контейнер уже 360px, колонка сожмётся до его ширины.
+Второе 360px — максимальная ширина колонки.
+
+*/
