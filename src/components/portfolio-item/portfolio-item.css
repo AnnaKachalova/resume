@@ -1,5 +1,5 @@
 .portfolio-item {
-  width: 360px;
+  width: min(100%, 360px);
   text-align: left;
   display: flex;
   flex-direction: column;

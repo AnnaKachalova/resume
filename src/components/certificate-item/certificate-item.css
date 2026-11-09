@@ -1,5 +1,5 @@
 .certificate-item {
-  width: calc((100% - 30px * 2) / 3);
+  width: auto;
 }
 
 .certificate-item:hover .certificate-description {
