@@ -1,5 +1,4 @@
 import type { JSX } from "react";
-import "./App.css";
 import "./styles/global.css";
 import "./styles/variables.css";
 
