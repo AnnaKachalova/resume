@@ -51,46 +51,6 @@ const promptWorkflowSteps: ProjectStep[] = [
 
 const projects: PersonalProjectData[] = [
   {
-    name: "Уголок спокойствия",
-    description:
-      "Сообщество с изображениями природы и интерфейс на React для составления промптов.",
-    url: "https://vk.ru/haven_corner",
-    technologies: ["React", "GigaChat", "ВКонтакте"],
-    steps: promptWorkflowSteps,
-    gallery: [
-      {
-        src: promptGeneratorImage,
-        alt: "Интерфейс на React для составления промптов",
-        caption: "Интерфейс генератора промптов",
-      },
-      {
-        src: vkCommunityImage,
-        alt: "Сообщество «Уголок спокойствия» во ВКонтакте с примерами публикаций",
-        caption: "Сообщество и публикации во ВКонтакте",
-      },
-    ],
-  },
-  {
-    name: "Милые кошки",
-    description:
-      "Сообщество с изображениями кошек и тот же процесс создания публикаций с помощью React-интерфейса и GigaChat.",
-    url: "https://vk.ru/qutecats",
-    technologies: ["React", "GigaChat", "ВКонтакте"],
-    steps: promptWorkflowSteps,
-    gallery: [
-      {
-        src: catsPromptGeneratorImage,
-        alt: "React-интерфейс генератора промптов с параметрами для изображений кошек",
-        caption: "Генератор промптов для изображений кошек",
-      },
-      {
-        src: catsVkCommunityImage,
-        alt: "Сообщество «Милые кошки» во ВКонтакте с примерами публикаций",
-        caption: "Сообщество и публикации во ВКонтакте",
-      },
-    ],
-  },
-  {
     name: "Сказки от пушистого хвостика",
     description:
       "Детский проект с раскрасками, вырезалками и обучающими видео для сообщества и видеоканала.",
@@ -131,6 +91,46 @@ const projects: PersonalProjectData[] = [
         src: fairyVideosImage,
         alt: "VK Видео канал «Сказки от пушистого хвостика» с обучающими роликами",
         caption: "Обучающие видео в VK Видео",
+      },
+    ],
+  },
+  {
+    name: "Уголок спокойствия",
+    description:
+      "Сообщество с изображениями природы и интерфейс на React для составления промптов.",
+    url: "https://vk.ru/haven_corner",
+    technologies: ["React", "GigaChat", "ВКонтакте"],
+    steps: promptWorkflowSteps,
+    gallery: [
+      {
+        src: promptGeneratorImage,
+        alt: "Интерфейс на React для составления промптов",
+        caption: "Интерфейс генератора промптов",
+      },
+      {
+        src: vkCommunityImage,
+        alt: "Сообщество «Уголок спокойствия» во ВКонтакте с примерами публикаций",
+        caption: "Сообщество и публикации во ВКонтакте",
+      },
+    ],
+  },
+  {
+    name: "Милые кошки",
+    description:
+      "Сообщество с изображениями кошек и тот же процесс создания публикаций с помощью React-интерфейса и GigaChat.",
+    url: "https://vk.ru/qutecats",
+    technologies: ["React", "GigaChat", "ВКонтакте"],
+    steps: promptWorkflowSteps,
+    gallery: [
+      {
+        src: catsPromptGeneratorImage,
+        alt: "React-интерфейс генератора промптов с параметрами для изображений кошек",
+        caption: "Генератор промптов для изображений кошек",
+      },
+      {
+        src: catsVkCommunityImage,
+        alt: "Сообщество «Милые кошки» во ВКонтакте с примерами публикаций",
+        caption: "Сообщество и публикации во ВКонтакте",
       },
     ],
   },
