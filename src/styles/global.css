@@ -24,3 +24,13 @@ h3 {
 img {
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+}
