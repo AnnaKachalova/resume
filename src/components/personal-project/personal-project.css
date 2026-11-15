@@ -97,6 +97,10 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.personal-project-gallery--featured {
+  grid-template-columns: 11fr 9fr;
+}
+
 .personal-project-gallery figure {
   min-width: 0;
 }
@@ -107,6 +111,12 @@
   height: auto;
   border: 1px solid var(--light-gray);
   border-radius: 8px;
+}
+
+.personal-project-gallery .personal-project-image--compact {
+  width: 59.89%;
+  max-width: 264px;
+  margin: 0 auto;
 }
 
 .personal-project-gallery figcaption {
@@ -128,7 +138,12 @@
 
   .personal-project-steps,
   .personal-project-gallery,
-  .personal-project-gallery--three {
+  .personal-project-gallery--three,
+  .personal-project-gallery--featured {
     grid-template-columns: 1fr;
+  }
+
+  .personal-project-gallery--featured .personal-project-image--compact {
+    width: 53.9%;
   }
 }

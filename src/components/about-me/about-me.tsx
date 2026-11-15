@@ -41,7 +41,7 @@ export default function AboutMe(): JSX.Element {
               ))}
             </div>
             <div className="about-me-contact-info">
-              <a href="mailto:kachalova.anna.10@gmail.com">kachalova.anna.10@gmail.com</a>
+              <a href="mailto:kachalova.mult@gmail.com">kachalova.mult@gmail.com</a>
               <a href="tel:+79270325442">8 (927) 032-54-42</a>
             </div>
           </div>

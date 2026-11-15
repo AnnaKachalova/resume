@@ -6,6 +6,8 @@ import catsVkCommunityImage from "../../assets/projects/qutecats-vk.png";
 import fairyCommunityImage from "../../assets/projects/fairy-fluffy-tail-vk.png";
 import fairyFigmaImage from "../../assets/projects/fairy-fluffy-tail-figma.png";
 import fairyVideosImage from "../../assets/projects/fairy-fluffy-tail-videos.png";
+import fluffyTailDesktopImage from "../../assets/projects/fluffy-tail-desktop.png";
+import fluffyTailMobileImage from "../../assets/projects/fluffy-tail-mobile.jpeg";
 import "./personal-project.css";
 
 interface ProjectStep {
@@ -18,23 +20,26 @@ interface ProjectImage {
   src: string;
   alt: string;
   caption: string;
+  compact?: boolean;
 }
 
 interface PersonalProjectData {
   name: string;
   description: string;
   url: string;
+  linkText: string;
   technologies: string[];
   steps: ProjectStep[];
   gallery: ProjectImage[];
+  featuredGallery?: boolean;
 }
 
 const promptWorkflowSteps: ProjectStep[] = [
   {
     number: "01",
-    title: "Собрала промпт",
+    title: "Разработала генератор промптов",
     description:
-      "Создала интерфейс на React, который помогает собрать промпт из выбранных параметров.",
+      "Самостоятельно написала интерфейс на React, который собирает промпт из выбранных параметров.",
   },
   {
     number: "02",
@@ -51,10 +56,53 @@ const promptWorkflowSteps: ProjectStep[] = [
 
 const projects: PersonalProjectData[] = [
   {
+    name: "Раскраски пушистого хвостика",
+    description:
+      "Сайт с раскрасками. Раскраски можно выбирать по темам, скачивать и распечатывать.",
+    url: "https://fluffy-tail.art/",
+    linkText: "Открыть сайт",
+    technologies: ["React", "TypeScript", "Vite", "GitHub Copilot", "Промпт-инжиниринг", "Генерация изображений"],
+    featuredGallery: true,
+    steps: [
+      {
+        number: "01",
+        title: "Создала сайт",
+        description:
+          "Разработала адаптивный сайт на React и TypeScript с каталогом разделов и поиском, используя GitHub Copilot для помощи в написании кода.",
+      },
+      {
+        number: "02",
+        title: "Подготовила раскраски",
+        description:
+          "Составляла и уточняла промпты для генерации изображений, отбирала результаты и подготавливала превью разделов.",
+      },
+      {
+        number: "03",
+        title: "Опубликовала проект",
+        description:
+          "Разместила сайт на собственном домене, настроила автоматическую публикацию, SEO и Яндекс Метрику.",
+      },
+    ],
+    gallery: [
+      {
+        src: fluffyTailDesktopImage,
+        alt: "Главная страница сайта «Раскраски пушистого хвостика» с каталогом тем",
+        caption: "Сайт с каталогом раскрасок",
+      },
+      {
+        src: fluffyTailMobileImage,
+        alt: "Мобильная версия сайта «Раскраски пушистого хвостика»",
+        caption: "Мобильная версия сайта",
+        compact: true,
+      },
+    ],
+  },
+  {
     name: "Сказки от пушистого хвостика",
     description:
       "Детский проект с раскрасками, вырезалками и обучающими видео для сообщества и видеоканала.",
     url: "https://vk.ru/fairy_fluffy_tail",
+    linkText: "Открыть сообщество ВК",
     technologies: ["Figma", "Промпты", "Генерация изображений", "Генерация видео", "ВКонтакте"],
     steps: [
       {
@@ -99,6 +147,7 @@ const projects: PersonalProjectData[] = [
     description:
       "Сообщество с изображениями природы и интерфейс на React для составления промптов.",
     url: "https://vk.ru/haven_corner",
+    linkText: "Открыть сообщество ВК",
     technologies: ["React", "GigaChat", "ВКонтакте"],
     steps: promptWorkflowSteps,
     gallery: [
@@ -119,6 +168,7 @@ const projects: PersonalProjectData[] = [
     description:
       "Сообщество с изображениями кошек и тот же процесс создания публикаций с помощью React-интерфейса и GigaChat.",
     url: "https://vk.ru/qutecats",
+    linkText: "Открыть сообщество ВК",
     technologies: ["React", "GigaChat", "ВКонтакте"],
     steps: promptWorkflowSteps,
     gallery: [
@@ -156,7 +206,7 @@ export default function PersonalProject(): JSX.Element {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Открыть сообщество ВК
+                {project.linkText}
               </a>
             </div>
 
@@ -182,7 +232,7 @@ export default function PersonalProject(): JSX.Element {
             </ol>
 
             <div
-              className={`personal-project-gallery${project.gallery.length === 3 ? " personal-project-gallery--three" : ""}`}
+              className={`personal-project-gallery${project.gallery.length === 3 ? " personal-project-gallery--three" : ""}${project.featuredGallery ? " personal-project-gallery--featured" : ""}`}
             >
               {project.gallery.map((image) => (
                 <figure key={image.src}>
@@ -192,7 +242,11 @@ export default function PersonalProject(): JSX.Element {
                     rel="noopener noreferrer"
                     aria-label={`Открыть крупное изображение: ${image.caption}`}
                   >
-                    <img src={image.src} alt={image.alt} />
+                    <img
+                      className={image.compact ? "personal-project-image--compact" : undefined}
+                      src={image.src}
+                      alt={image.alt}
+                    />
                   </a>
                   <figcaption>{image.caption}</figcaption>
                 </figure>
