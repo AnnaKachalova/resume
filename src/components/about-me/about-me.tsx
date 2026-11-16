@@ -3,6 +3,7 @@ import type { JSX } from "react";
 
 import github from "../../assets/svg/git.svg";
 import htmlacademy from "../../assets/svg/htmlacademy.svg";
+import photo from "../../assets/photo.jpg";
 
 const contacts = [
   {
@@ -22,7 +23,9 @@ export default function AboutMe(): JSX.Element {
     <section className="about-me">
       <h1>Качалова Анна | Frontend developer</h1>
       <div className="about-me-container">
-        <div className="about-me-photo"></div>
+        <div className="about-me-photo">
+          <img src={photo} alt="" />
+        </div>
         <div className="about-me-description">
           <p>
             Опыт в коммерческой разработке - более 8 лет. Ключевые проекты последних лет реализованы в образовательных платформах

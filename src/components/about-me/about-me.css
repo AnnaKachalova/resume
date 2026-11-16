@@ -5,7 +5,6 @@
 }
 
 .about-me-photo {
-  background-color: #d3d1cb;
   flex: 0 0 34%;
 }
 
@@ -46,7 +45,7 @@
 
   .about-me-photo {
     flex-basis: auto;
-    height: 220px;
+    /*height: 220px;*/
   }
 
   .about-me-contacts {
